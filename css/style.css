@@ -1,0 +1,321 @@
+
+  /* Fonts */
+
+/* Headings: Cabin Sketch */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: normal;
+}
+
+/* Body and UI Text: Arvo */
+body, p, li, a, span, button, input, textarea {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+}
+
+/* Bold Elements */
+strong, b {
+  font-weight: 700;
+}
+
+
+
+  /* Navigation */
+
+nav.navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.navbar-brand img {
+  display: block;
+  height: 80px;
+  width: auto;
+}
+
+.nav-link {
+  font-family: 'Arvo', serif;
+  font-size: 1rem;
+  color: #212529;
+  padding: 0.25rem 0;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  color: #0AA2C0;
+  text-decoration: underline;
+}
+
+/* General link styles */
+a {
+  color: #212529;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #0AA2C0;
+  text-decoration: underline;
+}
+
+
+  /* Info Bar */
+
+.custom-info-bar {
+  background-color: #0AA2C0;
+}
+
+
+
+  /* Hero Section */
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .btn {
+  font-family: 'Arvo', serif;
+}
+
+/* Hero images for specific pages */
+.home-page .hero {
+  background-image: url('../images/cupcakes_11.webp');
+}
+
+.contact-page .hero {
+  background-image: url('../images/cupcakes_2.webp');
+}
+
+
+/* 
+  Buttons */
+
+.btn-custom {
+  background-color: #0AA2C0;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #088aa5;
+  color: white;
+}
+
+
+
+  /* Menu Section */
+
+.menu-section .card-title {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1.5rem;
+}
+
+.menu-section .card-text {
+  font-family: 'Arvo', serif;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.menu-section .card-img-top {
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+
+
+  /* Carousel Reviews */
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-size: 60%;
+}
+
+.carousel-inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 5px !important;
+  background-color: #999 !important;
+  border-radius: 50% !important;
+  border: none !important;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #0AA2C0 !important;
+}
+
+#cupcakeCarousel {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.carousel-item {
+  padding-bottom: 4rem;
+}
+
+
+
+  /* Collage Grid */
+
+.cupcake-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.cupcake-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+
+  /* Baker & Review Images */
+
+.baker-img-wrapper {
+  text-align: center;
+  max-width: 100%;
+}
+
+.baker-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.review-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.review-text {
+  font-style: italic;
+  color: #444;
+  font-size: 1rem;
+}
+
+.review-card {
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+  /* Footer */
+
+.footer {
+  background-color: #3B312D;
+  color: white;
+}
+
+.footer-logo-wrapper {
+  background-color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.footer-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.btn-social {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+
+
+  /* Contact Section */
+
+.contact-box {
+  background-color: #3B312D;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box iframe {
+  border-radius: 10px;
+  height: 100%;
+}
+
+  
+  
+
+  

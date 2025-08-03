@@ -1,0 +1,106 @@
+<!-- Blue Info Bar (Only on Desktop) -->
+<div class="info-bar custom-info-bar text-white py-2 d-none d-lg-flex">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div></div>
+    <div class="d-flex gap-4 text-end">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-heart-fill"></i>
+        <span>Made with love</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bag-fill"></i>
+        <span>Pick-up daily</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-truck"></i>
+        <span>Standard delivery</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-light py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/buffalo-cupcake-logo.svg" alt="Buffalo Cupcake Logo" class="me-3 img-fluid" height="50" />
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="offcanvas" 
+      data-bs-target="#mobileMenu" 
+      aria-controls="mobileMenu" 
+      aria-label="Open menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-end d-none d-lg-block">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Offcanvas Mobile Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+  <!-- Hidden heading for accessibility -->
+  <h2 id="mobileMenuLabel" class="visually-hidden">Mobile Menu</h2>
+
+  <div class="offcanvas-header">
+    <button 
+      type="button" 
+      class="btn-close ms-auto" 
+      data-bs-dismiss="offcanvas" 
+      aria-label="Close"
+    ></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column gap-3 px-4">
+
+    <!-- Nav Links -->
+    <a href="index.html" class="fw-bold">Home</a>
+    <a href="contact.html" class="fw-bold">Contact</a>
+
+    <hr>
+
+    <!-- Info Bar Icons (Visible on Mobile) -->
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-heart-fill"></i>
+      <span>Made with love</span>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-bag-fill"></i>
+      <span>Pick-up daily</span>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-truck"></i>
+      <span>Standard delivery</span>
+    </div>
+
+    <hr>
+
+    <!-- Social Icons -->
+    <div class="d-flex gap-3 fs-5">
+      <a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-dark" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+  </div>
+</div>
